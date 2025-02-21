@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>L-chat💬</h1>
+    <div class="main">
+      <!-- Name header -->
+      <div class="name">
+        <span><i class="far fa-user"></i></span>
+        <input
+          type="text"
+          id="name-input"
+          class="name-input"
+          value="anonymous"
+          maxlength="15"
+        />
+      </div>
+      <!-- Text messages component -->
+      <div>
+        <ul class="message-container" id="message-container">
+          <!-- messsage from friend -->
+          <li class="message-left">
+            <p class="message">lore ipsum</p>
+            <span class="time-stamp">ash .10 Feb 9:30pm</span>
+          </li>
+          <!-- my message -->
+          <li class="message-right">
+            <p class="message">lore ipsum</p>
+            <span class="time-stamp">ash .10 Feb 9:30pm</span>
+          </li>
+          <!-- is typing.... -->
+          <li class="message-feedback">
+            <p class="feedback" id="feedback">x is typing a message...</p>
+          </li>
+        </ul>
+      </div>
+      <!-- form to add messages -->
+      <form class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="message-input"
+        />
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button">
+          send
+          <span class="fas fa-paper-plane"></span>
+        </button>
+      </form>
+      <h4 class="clients-total" id="clients-total">
+        Total clients: 2
+      </h4>
+    </div>
+  </body>
+</html>
